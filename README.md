@@ -33,56 +33,56 @@
 ## ⚙ 기술 스택
 
 ## FrontEnd
-![HTML.png](..%2F..%2FDownloads%2FHTML.png)
-![CSS.png](..%2F..%2FDownloads%2FCSS.png)
-![JS.png](..%2F..%2FDownloads%2FJS.png)
-![ZUSTAND.png](..%2F..%2FDownloads%2FZUSTAND.png)
-![ReactQuery.png](..%2F..%2FDownloads%2FReactQuery.png)
-![TS.png](..%2F..%2FDownloads%2FTS.png)
+![HTML.png](./images/HTML.png)
+![CSS.png](./images/CSS.png)
+![JS.png](./images/JS.png)
+![ZUSTAND.png](./images/ZUSTAND.png)
+![ReactQuery.png](./images/ReactQuery.png)
+![TS.png](./images/TS.png)
 
 ## BackEnd
-![SpringBoot.png](..%2F..%2FDownloads%2FSpringBoot.png)
-![NginX.png](..%2F..%2FDownloads%2FNginX.png)
-![JPA.png](..%2F..%2FDownloads%2FJPA.png)
-![SpringSecurity.png](..%2F..%2FDownloads%2FSpringSecurity.png)
-![Redis.png](..%2F..%2FDownloads%2FRedis.png)
-![MariaDB.png](..%2F..%2FDownloads%2FMariaDB.png)
-![Jmeter.png](..%2F..%2FDownloads%2FJmeter.png)
-![Junit.png](..%2F..%2FDownloads%2FJunit.png)
+![SpringBoot.png](./images/SpringBoot.png)
+![NginX.png](./images/NginX.png)
+![JPA.png](./images/JPA.png)
+![SpringSecurity.png](./images/SpringSecurity.png)
+![Redis.png](./images/Redis.png)
+![MariaDB.png](./images/MariaDB.png)
+![Jmeter.png](./images/Jmeter.png)
+![Junit.png](./images/Junit.png)
 
 ## Infra
-![EC2.png](..%2F..%2FDownloads%2FEC2.png)
-![Ubuntu.png](..%2F..%2FDownloads%2FUbuntu.png)
-![Docker.png](..%2F..%2FDownloads%2FDocker.png)
-![GitLab.png](..%2F..%2FDownloads%2FGitLab.png)
-![Git.png](..%2F..%2FDownloads%2FGit.png)
-![GitLabRunner.png](..%2F..%2FDownloads%2FGitLabRunner.png)
-![Prometheus.png](..%2F..%2FDownloads%2FPrometheus.png)
-![Grafana.png](..%2F..%2FDownloads%2FGrafana.png)
+![EC2.png](./images/EC2.png)
+![Ubuntu.png](./images/Ubuntu.png)
+![Docker.png](./images/Docker.png)
+![GitLab.png](./images/GitLab.png)
+![Git.png](./images/Git.png)
+![GitLabRunner.png](./images/GitLabRunner.png)
+![Prometheus.png](./images/Prometheus.png)
+![Grafana.png](./images/Grafana.png)
 
 ## 🎥 주요 화면
 
 ### 먹비티아이(MukBTI)
-![MukBTI.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FMukBTI.png)
+![MukBTI.png](./images/MukBTI.png)
 
 ### 먹그룹(MukGroup)
-![MukGroup.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FMukGroup.png)
+![MukGroup.png](./images/MukGroup.png)
 
 ### 먹기록(MukRecord)
-![MukRecord.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FMukRecord.png)
+![MukRecord.png](./images/MukRecord.png)
 
 ## 📕 기타 산출물
 
 ### 아키텍처
-![Architecture.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FArchitecture.png)
+![Architecture.png](./images/Architecture.png)
 
 ### ERD
-![ERD.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FERD.png)
+![ERD.png](./images/ERD.png)
 
 ### 플로우차트
-![Flow-Chart.png](..%2F..%2FDownloads%2FFlow-Chart.png)
+![Flow-Chart.png](./images/Flow-Chart.png)
 
 ### API명세서
-![API명세서1.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FAPI%B8%ED%BC%BC%BC%AD1.png)
-![API명세서2.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FAPI%B8%ED%BC%BC%BC%AD2.png)
-![API명세서3.png](..%2F..%2FDesktop%2F%C6%AF%C8%AD%2FAPI%B8%ED%BC%BC%BC%AD3.png)
+![API명세서1.png](./images/API명세서1.png)
+![API명세서2.png](./images/API명세서2.png)
+![API명세서3.png](./images/API명세서3.png)
