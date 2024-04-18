@@ -1,0 +1,110 @@
+// @import 'NavBar.module.scss';
+
+$color-gray: #656565;
+$color-main: #2a43ce;
+
+.mbtiSection {
+  padding: 20px;
+  background-color: rgba($color-main, 0.03);
+  width: 95%;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .mbtiTitleBox {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    > span {
+      color: $color-gray;
+      font-size: 18px;
+      text-shadow:
+        -2px 0px white,
+        0px 2px white,
+        2px 0px white,
+        0px -2px white;
+    }
+    > div {
+      background-color: white;
+      font-size: 14px;
+      color: rgba(black, 0.7);
+      border: 1px solid rgba(#0e26ae, 0.2);
+      padding: 6px;
+      border-radius: 5px;
+    }
+  }
+  .mbtiBarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .mbtiNameBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20%;
+      .mbtiNameKor {
+        font-size: 16px;
+        color: rgba(black, 0.5);
+      }
+      .mbtiNameEng {
+        font-size: 14px;
+        color: rgba(black, 0.6);
+        margin-bottom: 2px;
+        &::first-letter {
+          font-size: 18px;
+          font-weight: bold;
+          color: rgba($color-main, 0.5);
+          text-shadow:
+            -2px 0px white,
+            0px 2px white,
+            2px 0px white,
+            0px -2px white;
+        }
+      }
+    }
+    .mbtiBarBackGround {
+      width: 60%;
+      height: 9px;
+      border-radius: 6px;
+      background-color: #efefef;
+      position: relative;
+      > span {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 14px;
+        color: rgba(black, 0.7);
+      }
+      .leftMbtiBar {
+        height: 7px;
+        position: absolute;
+        border-radius: 6px;
+        opacity: 0.2;
+        // background-color: rgba(#ff0000, 0.2);
+        top: 50%;
+        left: 1px;
+        transform: translate(0, -50%);
+        z-index: 1;
+      }
+      .rightMbtiBar {
+        height: 7px;
+        position: absolute;
+        right: 0px;
+        border-radius: 6px;
+        opacity: 0.2;
+        top: 50%;
+        right: 1px;
+        transform: translate(0, -50%);
+        z-index: 1;
+      }
+    }
+  }
+}

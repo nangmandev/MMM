@@ -1,0 +1,21 @@
+$color-main: #2a43ce;
+$color-gray: #656565;
+
+.wrapper {
+  padding: 10px 0;
+  height: calc(100vh - 152px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.vsText {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba($color-main, 0.4);
+}

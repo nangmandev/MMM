@@ -1,0 +1,30 @@
+.profileImgBox {
+  width: 115px;
+  aspect-ratio: 1/1;
+  background-color: rgba(202, 202, 202, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profileImgBox .defaultImg {
+  width: 85px;
+  aspect-ratio: 1/1;
+}
+.profileImgBox .profileImg {
+  width: 115px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.profileImgBox > button {
+  background-color: rgba(42, 67, 206, 0.45);
+  width: 20px;
+  aspect-ratio: 1/1;
+  color: white;
+  font-weight: 500;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}/*# sourceMappingURL=ProfileImgBox.module.css.map */

@@ -1,0 +1,326 @@
+.wrapperFive {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapperFive > h1 {
+  font-size: 26px;
+  width: 90%;
+  color: #656565;
+}
+.wrapperFive .questionNumBox {
+  width: 90%;
+  color: rgba(101, 101, 101, 0.8);
+  text-align: right;
+}
+.wrapperFive section {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(42, 67, 206, 0.03);
+  padding: 5vw;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+.wrapperFive section :last-child .circleLine {
+  display: none;
+}
+.wrapperFive section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.wrapperFive section > div > span {
+  color: rgba(42, 67, 206, 0.5);
+  font-size: 22px;
+  width: 120px;
+}
+.wrapperFive section > div .imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  aspect-ratio: 1/1;
+}
+.wrapperFive section > div .imageBox > img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.wrapperFive > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.wrapperTwo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapperTwo > h1 {
+  font-size: 26px;
+  color: #656565;
+}
+.wrapperTwo .questionNumBox {
+  width: 90%;
+  color: rgba(101, 101, 101, 0.8);
+  text-align: right;
+}
+.wrapperTwo section {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.wrapperTwo section .selectedAnswerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  border-radius: 15px;
+  background-color: rgba(42, 67, 206, 0.15);
+  border: 1px solid rgba(42, 67, 206, 0.7);
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+.wrapperTwo section .selectedAnswerBox > span {
+  color: rgba(42, 67, 206, 0.75);
+  font-size: 40px;
+  width: 200px;
+  font-weight: 500;
+  z-index: 500;
+  text-shadow: -3px -3px 0 white, 0px -3px 0 white, 3px -3px 0 white, 3px 0px 0 white, 3px 3px 0 white, 0px 3px 0 white, -3px 3px 0 white, -3px 0px 0 white;
+}
+.wrapperTwo section .selectedAnswerBox > div {
+  width: 200px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+.wrapperTwo section .selectedAnswerBox > div > img {
+  opacity: 0.8;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.wrapperTwo section .answerBox {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  border-radius: 15px;
+  background-color: rgba(42, 67, 206, 0.03);
+  position: relative;
+}
+.wrapperTwo section .answerBox > span {
+  color: rgba(42, 67, 206, 0.75);
+  font-size: 40px;
+  width: 200px;
+  font-weight: 500;
+  z-index: 500;
+  text-shadow: -3px -3px 0 white, 0px -3px 0 white, 3px -3px 0 white, 3px 0px 0 white, 3px 3px 0 white, 0px 3px 0 white, -3px 3px 0 white, -3px 0px 0 white;
+}
+.wrapperTwo section .answerBox > div {
+  width: 200px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapperTwo section .answerBox > div > img {
+  width: 100%;
+  opacity: 0.5;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.wrapperTwo > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+.wrapperBaekBan {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapperBaekBan > img {
+  min-width: 100%;
+  width: 100%;
+  margin: 12px 0px;
+}
+.wrapperBaekBan > h1 {
+  font-size: 26px;
+  width: 90%;
+  color: #656565;
+}
+.wrapperBaekBan .questionNumBox {
+  width: 90%;
+  color: rgba(101, 101, 101, 0.8);
+  text-align: right;
+}
+.wrapperBaekBan section {
+  padding: 24px 0px;
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  position: relative;
+  background-color: rgba(42, 67, 206, 0.03);
+}
+.wrapperBaekBan section .circleLine {
+  display: none;
+}
+.wrapperBaekBan section > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapperBaekBan section > div > span {
+  font-size: 22px;
+  color: rgba(42, 67, 206, 0.5);
+}
+.wrapperBaekBan section .selectedAnswerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  border-radius: 15px;
+  background-color: rgba(42, 67, 206, 0.15);
+  border: 1px solid rgba(42, 67, 206, 0.7);
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+.wrapperBaekBan section .selectedAnswerBox > span {
+  color: rgba(42, 67, 206, 0.75);
+  font-size: 40px;
+  width: 200px;
+  font-weight: 500;
+  z-index: 500;
+  text-shadow: -3px -3px 0 white, 0px -3px 0 white, 3px -3px 0 white, 3px 0px 0 white, 3px 3px 0 white, 0px 3px 0 white, -3px 3px 0 white, -3px 0px 0 white;
+}
+.wrapperBaekBan section .selectedAnswerBox > div {
+  width: 200px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapperBaekBan section .answerBox {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  border-radius: 15px;
+  background-color: rgba(42, 67, 206, 0.03);
+  position: relative;
+}
+.wrapperBaekBan section .answerBox > span {
+  color: rgba(42, 67, 206, 0.75);
+  font-size: 40px;
+  width: 200px;
+  font-weight: 500;
+  z-index: 500;
+  text-shadow: -3px -3px 0 white, 0px -3px 0 white, 3px -3px 0 white, 3px 0px 0 white, 3px 3px 0 white, 0px 3px 0 white, -3px 3px 0 white, -3px 0px 0 white;
+}
+.wrapperBaekBan section .answerBox > div {
+  width: 200px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapperBaekBan > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(101, 101, 101, 0.8);
+}
+
+h1 {
+  font-size: 26px;
+  color: #656565;
+  font-weight: 100;
+}
+
+.parentCheckCircle {
+  background-color: #b4bef4;
+  width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+}
+.parentCheckCircle .circleLine {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  height: 80px;
+  border-right: 2px solid #b4bef4;
+}
+.parentCheckCircle .childCheckCircle {
+  background-color: white;
+  width: 14px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parentCheckCircle .selectedChildCheckCircle {
+  background-color: rgba(42, 67, 206, 0.8);
+  width: 14px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vsText {
+  color: #656565;
+  font-size: 22px;
+  font-weight: 500;
+}/*# sourceMappingURL=MbtiPage.module.css.map */

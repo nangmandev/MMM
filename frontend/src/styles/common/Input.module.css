@@ -1,0 +1,39 @@
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.inputContainer label {
+  width: 80px;
+  font-size: 20px;
+  color: #656565;
+  vertical-align: middle;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.inputBox .shortInput {
+  font-size: 15px;
+  width: 190px;
+  height: 36px;
+  margin-bottom: 4px;
+  padding-right: 27px;
+}
+.inputBox .longInput {
+  font-size: 15px;
+  width: 240px;
+  height: 36px;
+  margin-bottom: 4px;
+}
+.inputBox span {
+  font-size: 14px;
+  color: rgba(101, 101, 101, 0.5);
+  text-align: left;
+}/*# sourceMappingURL=Input.module.css.map */

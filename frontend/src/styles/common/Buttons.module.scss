@@ -1,0 +1,128 @@
+$color-main: #2a43ce;
+$color-user: #0e26ae;
+$color-gray: #656565;
+$color-red: #ff0000;
+$button-padding: 18px;
+$font-size: 20px;
+
+.landingButton {
+  width: 95%;
+  max-width: 340px;
+  border: 1px solid rgba($color-main, 0.4);
+  font-size: $font-size;
+  color: rgba($color-main, 0.65);
+  padding: $button-padding 0;
+  border-radius: 50px;
+  margin: 1vh 0;
+  &:hover {
+    border: 1px solid;
+    color: white;
+    background-color: rgba($color-main, 0.4);
+  }
+}
+
+.userButton {
+  width: 275px;
+  background-color: rgba($color-user, 0.3);
+  font-size: $font-size;
+  color: white;
+  padding: $button-padding 0;
+  border-radius: 50px;
+  margin-top: 20px;
+  &:hover {
+    background-color: rgba($color-user, 0.4);
+  }
+}
+.userButton:disabled {
+  background-color: rgba($color-gray, 0.3);
+}
+
+.miniBlueButton {
+  font-size: 16px;
+  width: 50px;
+  height: 36px;
+  border: 1.5px solid rgba($color-main, 0.4);
+  border-radius: 5px;
+  color: rgba($color-main, 0.65);
+  &:not([disabled]):hover {
+    border: none;
+    color: white;
+    background-color: rgba($color-main, 0.4);
+  }
+}
+
+.miniRedButton {
+  font-size: 16px;
+  width: 50px;
+  height: 36px;
+  border: 1.5px solid rgba($color-red, 0.5);
+  border-radius: 5px;
+  color: rgba($color-red, 0.5);
+}
+.miniRedButton:disabled {
+  background-color: rgba($color-main, 0.3);
+  border: none;
+  color: white;
+  width: 36px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.miniRoundedButton {
+  font-size: 17px;
+  width: 100px;
+  min-height: 55px;
+  border: 1.5px solid rgba($color-main, 0.4);
+  border-radius: 50px;
+  color: rgba($color-main, 0.65);
+  &:focus {
+    border: 1.5px solid rgba($color-main, 0.6);
+    color: $color-main;
+  }
+}
+.miniRoundedButton:disabled {
+  background-color: rgba($color-gray, 0.3);
+  color: white;
+  border: none;
+}
+
+.miniBlueRoundedButton {
+  font-size: 17px;
+  width: 100px;
+  min-height: 55px;
+  background-color: rgba($color-user, 0.4);
+  border-radius: 50px;
+  color: white;
+  // &:focus {
+  //   border: 1.5px solid rgba($color-main, 0.6);
+  //   color: $color-main;
+  // }
+}
+
+.squaredButton {
+  font-size: 18px;
+  width: 232px;
+  min-height: 55px;
+  background-color: rgba($color-main, 0.4);
+  border-radius: 5px;
+  color: white;
+  margin: 12px 0px;
+  // border: 1.5px solid rgba($color-main, 0.6);
+  // &:focus {
+  //   border: 1.5px solid rgba($color-main, 0.6);
+  //   color: $color-main;
+  // }
+}
+
+.blockedMiniRoundedButton {
+  width: 100px;
+  height: 55px;
+  border: 1.5px solid rgba($color-main, 0.4);
+  border-radius: 50px;
+  color: rgba($color-main, 0.65);
+  pointer-events: none;
+  &:focus {
+    border: 1.5px solid rgba($color-main, 0.6);
+    color: $color-main;
+  }
+}

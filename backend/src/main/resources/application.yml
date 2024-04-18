@@ -1,0 +1,11 @@
+
+spring:
+  config:
+    import:
+      - secret.yml
+  profiles:
+    default: local
+
+logging:
+  level:
+    com.spring.mmm: debug

@@ -1,0 +1,32 @@
+$color-main: #2a43ce;
+
+.profileImgBox {
+  width: 115px;
+  aspect-ratio: 1/1;
+  background-color: rgba(#cacaca, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .defaultImg {
+    width: 85px;
+    aspect-ratio: 1/1;
+  }
+  .profileImg {
+    width: 115px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+  > button {
+    background-color: rgba($color-main, 0.45);
+    width: 20px;
+    aspect-ratio: 1/1;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+  }
+}

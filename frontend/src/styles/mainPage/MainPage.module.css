@@ -1,0 +1,707 @@
+.wrapper {
+  padding: 10px 0;
+  height: calc(100vh - 152px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  gap: 12px;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.mainRecommendSection {
+  width: 95%;
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+}
+.mainRecommendSection .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainRecommendSection .header .titleBox {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(42, 67, 206, 0.3);
+  gap: 5px;
+}
+.mainRecommendSection .header .titleBox > h2 {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgba(42, 67, 206, 0.8);
+}
+.mainRecommendSection .header .titleBox > img {
+  width: 12px;
+  aspect-ratio: 1/1;
+}
+.mainRecommendSection .header > img {
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+.mainRecommendSection main {
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  height: 220px;
+}
+.mainRecommendSection main .recommendFoodBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mainRecommendSection main .recommendFoodBox img {
+  width: 160px;
+  display: flex;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid rgba(42, 67, 206, 0.2);
+}
+.mainRecommendSection main .recommendFoodBox span {
+  color: #656565;
+  font-size: 16px;
+}
+
+.weatherRecommendSection {
+  width: 95%;
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 95px;
+}
+.weatherRecommendSection .textBox {
+  text-align: left;
+}
+.weatherRecommendSection .textBox h2 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 14px;
+  color: rgba(101, 101, 101, 0.8);
+  margin-bottom: 5px;
+}
+.weatherRecommendSection .textBox div {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.weatherRecommendSection .textBox div::first-letter {
+  color: rgba(42, 67, 206, 0.7);
+}
+.weatherRecommendSection .textBox div .foodName {
+  font-size: 20px;
+  color: rgba(42, 67, 206, 0.7);
+}
+.weatherRecommendSection > img {
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 50%;
+  right: 0px;
+  transform: translate(0, -50%);
+  width: 60%;
+  aspect-ratio: 1/1;
+}
+
+.newRecommendSection {
+  width: 95%;
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 95px;
+}
+.newRecommendSection .textBox {
+  text-align: right;
+}
+.newRecommendSection .textBox h2 {
+  font-weight: 500;
+  text-align: right;
+  font-size: 14px;
+  color: rgba(101, 101, 101, 0.8);
+  margin-bottom: 5px;
+}
+.newRecommendSection .textBox div {
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.newRecommendSection .textBox div .foodName {
+  font-size: 20px;
+  color: rgba(42, 67, 206, 0.7);
+}
+.newRecommendSection > img {
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+  width: 60%;
+  aspect-ratio: 1/1;
+}
+
+.groupSection {
+  width: 95%;
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  flex: 1;
+}
+.groupSection .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.groupSection .header > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.groupSection .header > div > span {
+  font-size: 15px;
+  color: rgba(42, 67, 206, 0.5);
+}
+.groupSection .header > div > img {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.groupSection .header h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(42, 67, 206, 0.8);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.3);
+  text-underline-offset: 5px;
+}
+.groupSection .groupInfoBox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.groupSection .groupInfoBox .soloGroupName {
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.groupSection .groupInfoBox .groupName {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.groupSection .soloMain {
+  margin: 12px;
+}
+.groupSection .soloMain > span {
+  margin: 12px;
+  font-size: 16px;
+  color: rgba(101, 101, 101, 0.3);
+}
+.groupSection .groupMain {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.groupSection .groupMain article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 200px;
+}
+.groupSection .groupMain article .togetherBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 24px;
+  width: 93%;
+}
+.groupSection .groupMain article .togetherBox > img {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+.groupSection .groupMain article .togetherBox > span {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+}
+.groupSection .groupMain article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  min-height: 50px;
+  max-height: 160px;
+}
+.groupSection .groupMain article > div::-webkit-scrollbar {
+  width: 8px;
+}
+.groupSection .groupMain article > div::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 67, 206, 0.2);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.groupSection .groupMain article > div::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(42, 67, 206, 0.4);
+}
+.groupSection .groupMain article > div::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+  /* box-shadow: inset 0px 0px 5px white; */
+}
+.groupSection .groupMain article > div .memberCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  min-height: 50px;
+  width: 95%;
+  border-radius: 5px;
+  padding: 0px 16px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+}
+.groupSection .groupMain article > div .memberCard .nickname {
+  width: 75%;
+  text-align: left;
+}
+.groupSection .groupMain article > div .memberCard .mbti {
+  width: 25%;
+  text-align: left;
+}
+.groupSection .groupMain article .todayTitle {
+  padding-left: 5px;
+  text-align: left;
+  text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px white;
+  color: rgba(42, 67, 206, 0.7);
+  font-size: 15px;
+  margin: 5px;
+}
+.groupSection .groupMain article .todayNext {
+  padding-left: 5px;
+  text-align: left;
+  color: rgba(101, 101, 101, 0.8);
+  font-size: 15px;
+  margin: 5px;
+}
+
+.recordModalWrapper > h2 {
+  color: rgba(42, 67, 206, 0.8);
+  font-size: 17px;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.3);
+  font-weight: 100;
+}
+.recordModalWrapper > p {
+  margin: 12px 0px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.recordModalWrapper > p .boldWord {
+  color: rgba(42, 67, 206, 0.7);
+  font-size: 18px;
+}
+.recordModalWrapper .recommendBox {
+  background-color: rgba(42, 67, 206, 0.03);
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.recordModalWrapper .recommendBox .recommendItem {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.recordModalWrapper .recommendBox .recommendItem .selectedImgBox {
+  width: 60px;
+  border-radius: 50%;
+}
+.recordModalWrapper .recommendBox .recommendItem .selectedImgBox > img {
+  border: 3px solid rgba(42, 67, 206, 0.5);
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.recordModalWrapper .recommendBox .recommendItem .imgBox > img {
+  border: 1px solid rgba(42, 67, 206, 0.5);
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.recordModalWrapper .recommendBox .recommendItem .text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.recordModalWrapper .recommendBox .recommendItem .selectedText {
+  font-size: 14px;
+  color: rgba(42, 67, 206, 0.8);
+}
+.recordModalWrapper .buttonBox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.createGroupModalWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.createGroupModalWrapper > h2 {
+  padding-left: 12px;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 100;
+  color: rgba(42, 67, 206, 0.7);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.3);
+  text-underline-offset: 5px;
+}
+.createGroupModalWrapper .imgBox {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.createGroupModalWrapper .imgBox > span {
+  position: absolute;
+  font-size: 16px;
+  color: #656565;
+  top: 5px;
+  left: 5px;
+}
+
+.roulleteWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roulleteWrapper > img {
+  position: absolute;
+  width: 17px;
+  aspect-ratio: 1/1;
+  z-index: 50;
+  top: -5px;
+}
+.roulleteWrapper canvas {
+  transition: 2s;
+  width: 210px;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.roulleteWrapper canvas > div {
+  width: 380px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.roulleteWrapper canvas > div::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  font-size: 14px;
+  color: black;
+  height: 50px;
+  border-radius: 5px;
+  background: #000;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22;
+}
+.roulleteWrapper .stopButton {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  padding: 10px;
+  color: white;
+  background: rgba(42, 67, 206, 0.4);
+  border: none;
+  font-size: 17px;
+  border-radius: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:active {
+  background: #444;
+  color: #f9f9f9;
+}
+
+.selectedFoodModalWrapper {
+  width: 100%;
+  padding: 36px;
+}
+.selectedFoodModalWrapper .selectedFoodModalBox {
+  border: 50px dashed rgba(14, 38, 174, 0.2);
+  border-width: 3px;
+  background-color: rgba(14, 38, 174, 0.03);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+.selectedFoodModalWrapper .selectedFoodModalBox > h2 {
+  background-color: white;
+  top: -12px;
+  position: absolute;
+  font-family: "malssami815";
+  font-size: 22px;
+  color: rgba(42, 67, 206, 0.7);
+}
+.selectedFoodModalWrapper .selectedFoodModalBox > span {
+  font-size: 18px;
+  color: rgba(101, 101, 101, 0.8);
+}
+.selectedFoodModalWrapper .selectedFoodModalBox > img {
+  border-radius: 50%;
+  width: 160px;
+  aspect-ratio: 1/1;
+}
+
+.todayMemberModalWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.todayMemberModalWrapper .todayMemberHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.todayMemberModalWrapper .todayMemberHeader > h2 {
+  text-align: left;
+  font-weight: 100;
+  font-size: 17px;
+  color: rgba(42, 67, 206, 0.8);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.3);
+  text-underline-offset: 5px;
+}
+.todayMemberModalWrapper .todayMemberHeader > div {
+  display: flex;
+  align-items: center;
+}
+.todayMemberModalWrapper .todayMemberHeader > div > img {
+  width: 15px;
+  aspect-ratio: 1/1;
+}
+.todayMemberModalWrapper .todayMemberHeader > div > span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.todayMemberModalWrapper .todayMemberSection {
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 0px 12px 12px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  max-height: 260px;
+  margin-bottom: 12px;
+}
+.todayMemberModalWrapper .todayMemberSection > h5 {
+  position: absolute;
+  left: 12px;
+  top: -10px;
+  font-size: 14px;
+  color: rgba(42, 67, 206, 0.7);
+  text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px white;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox {
+  max-height: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 5px;
+  min-height: 50px;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox::-webkit-scrollbar {
+  width: 8px;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 67, 206, 0.2);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(42, 67, 206, 0.4);
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+  /* box-shadow: inset 0px 0px 5px white; */
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox .memberBox {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox .memberBox .memberWhiteBox {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0px 24px;
+  gap: 5px;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox .memberBox .memberWhiteBox .memberName {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  text-align: left;
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox .memberBox .memberWhiteBox .memberMBTI {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.todayMemberModalWrapper .todayMemberSection .todayMemberBox .memberBox .changeButton {
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
+  background-color: rgba(42, 67, 206, 0.2);
+  color: #7789ed;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.todayMemberModalWrapper .nextMemberSection {
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 12px 0px 12px 12px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  max-height: 150px;
+}
+.todayMemberModalWrapper .nextMemberSection > h5 {
+  position: absolute;
+  left: 12px;
+  top: -10px;
+  font-size: 14px;
+  color: rgba(101, 101, 101, 0.8);
+  text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px white;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox {
+  max-height: 115px;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox::-webkit-scrollbar {
+  width: 8px;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 67, 206, 0.2);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(42, 67, 206, 0.4);
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox::-webkit-scrollbar-track {
+  background-color: rgba(220, 220, 220, 0.7);
+  border-radius: 10px;
+  /* box-shadow: inset 0px 0px 5px white; */
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox .memberBox {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox .memberBox .memberWhiteBox {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0px 24px;
+  gap: 5px;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox .memberBox .memberWhiteBox .memberName {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  text-align: left;
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox .memberBox .memberWhiteBox .memberMBTI {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.todayMemberModalWrapper .nextMemberSection .todayMemberBox .memberBox .changeButton {
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
+  background-color: rgba(42, 67, 206, 0.2);
+  color: #7789ed;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 8px;
+}/*# sourceMappingURL=MainPage.module.css.map */

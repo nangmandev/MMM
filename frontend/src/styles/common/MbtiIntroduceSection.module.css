@@ -1,0 +1,82 @@
+.wrapper {
+  width: 95%;
+}
+.wrapper .mbtiIntroduceSection {
+  margin: 12px 0px;
+  background-color: rgba(42, 67, 206, 0.03);
+  border-radius: 5px;
+  padding: 15px;
+}
+.wrapper .mbtiIntroduceSection > h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: rgba(42, 67, 206, 0.8);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.3);
+  font-weight: 500;
+  text-underline-offset: 5px;
+  text-align: left;
+}
+.wrapper .mbtiIntroduceSection > p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.wrapper .mbtiIntroduceOptionSection {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: rgba(42, 67, 206, 0.03);
+  padding: 15px;
+}
+.wrapper .mbtiIntroduceOptionSection > article > h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(42, 67, 206, 0.8);
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 67, 206, 0.2);
+  text-align: left;
+  text-underline-offset: 5px;
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox .mbtiIntroduceOptionItem {
+  width: 40%;
+  position: relative;
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox .mbtiIntroduceOptionItem img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 86px;
+  aspect-ratio: 1/1;
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox .mbtiIntroduceOptionItem span {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-family: "Malssami815";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-shadow: -2px 0px rgba(255, 255, 255, 0.8), 0px 2px rgba(255, 255, 255, 0.8), 2px 0px rgba(255, 255, 255, 0.8), 0px -2px rgba(255, 255, 255, 0.8);
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox .mbtiIntroduceOptionItem span::first-letter {
+  font-size: 26px;
+}
+.wrapper .mbtiIntroduceOptionSection > article .mbtiIntroduceOptionBox .mbtiIntroduceOptionItem p {
+  width: 100%;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  top: 45%;
+  left: 50%;
+  color: rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, 2%);
+}/*# sourceMappingURL=MbtiIntroduceSection.module.css.map */

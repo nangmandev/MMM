@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+#        show_sql: true
+#        format_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
+  data:
+    redis:
+      host: j10a110a.p.ssafy.io
+      port: 6379
+      timeout: 6
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: ssafy
+    password: 1q2w3e4r!
+    url: jdbc:mariadb://j10a110a.p.ssafy.io:3306/mmm?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+  servlet:
+    multipart:
+      max-request-size: 5MB
+      max-file-size: 5MB
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
+logging:
+  level:
+    com.spring.mmm: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

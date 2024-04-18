@@ -1,0 +1,56 @@
+$color-gray: #656565;
+$color-main: #2a43ce;
+$height-input: 36px;
+
+.wrapper {
+  // flex: 1;
+  height: calc(100vh - 152px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > section {
+    > div {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  > span {
+    font-size: 16px;
+    color: rgba($color-main, 0.5);
+    margin-top: 16px;
+    a:visited,
+    a:link {
+      color: rgba($color-main, 0.5);
+    }
+  }
+}
+
+.subLogo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.inputPassword {
+  position: relative;
+  img {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.checkMessage {
+  color: rgba(#f32025, 0.5);
+}
+
+.logout {
+  cursor: pointer;
+  &:hover {
+    color: rgba($color-main, 0.7)
+  }
+}

@@ -1,0 +1,48 @@
+$color-gray: #656565;
+$color-main: #2a43ce;
+$height-input: 36px;
+
+.inputContainer {
+  // width: 280px;
+  // background-color: aqua;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  .title {
+    font-size: 17px;
+    color: rgba($color-gray, 1);
+    height: $height-input;
+  }
+}
+
+.inputBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  .shortInput {
+    font-size: 15px;
+    width: 190px;
+    height: $height-input;
+    margin-bottom: 4px;
+  }
+  .longInput {
+    font-size: 15px;
+    width: 240px;
+    height: $height-input;
+    margin-bottom: 4px;
+  }
+  span {
+    font-size: 14px;
+    color: rgba($color-gray, 0.5);
+    text-align: left;
+    // height: 35px;
+  }
+}
+
+// .inputLong {
+//   @extend .inputBox;
+
+//   input {
+//     width: 300px;
+//   }
+// }

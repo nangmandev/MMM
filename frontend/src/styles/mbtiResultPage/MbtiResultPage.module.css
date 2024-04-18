@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSection {
+  padding-top: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainSection::-webkit-scrollbar {
+  display: none;
+}
+
+.subLogo {
+  width: 80px;
+  margin: 15px 0px 10px 0px;
+}
+
+.nextButton {
+  margin: 12px 0;
+}/*# sourceMappingURL=MbtiResultPage.module.css.map */

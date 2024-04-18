@@ -1,0 +1,733 @@
+$color-main: #2a43ce;
+$color-gray: #656565;
+$color-user: #0e26ae;
+.wrapper {
+  padding: 10px 0;
+  height: calc(100vh - 152px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  gap: 12px;
+  // background-color: aqua;
+  // justify-content: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.mainRecommendSection {
+  width: 95%;
+  background-color: rgba($color-main, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .titleBox {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba($color-main, 0.3);
+      gap: 5px;
+      > h2 {
+        font-weight: 500;
+        font-size: 17px;
+        color: rgba($color-main, 0.8);
+      }
+      > img {
+        width: 12px;
+        aspect-ratio: 1/1;
+      }
+    }
+
+    > img {
+      width: 16px;
+      height: 16px;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+  }
+  main {
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    height: 220px;
+    .recommendFoodBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 160px;
+        display: flex;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: 1px solid rgba($color-main, 0.2);
+      }
+      span {
+        color: $color-gray;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.weatherRecommendSection {
+  width: 95%;
+  background-color: rgba($color-main, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 95px;
+  .textBox {
+    text-align: left;
+    h2 {
+      font-weight: 500;
+      text-align: left;
+      font-size: 14px;
+      color: rgba($color-gray, 0.8);
+      margin-bottom: 5px;
+    }
+    div {
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      font-size: 18px;
+      color: rgba(black, 0.8);
+      &::first-letter {
+        color: rgba($color-main, 0.7);
+      }
+      .foodName {
+        font-size: 20px;
+        color: rgba($color-main, 0.7);
+      }
+    }
+  }
+  > img {
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 50%;
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
+    width: 60%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.newRecommendSection {
+  width: 95%;
+  background-color: rgba($color-main, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 95px;
+  .textBox {
+    text-align: right;
+    h2 {
+      font-weight: 500;
+      text-align: right;
+      font-size: 14px;
+      color: rgba($color-gray, 0.8);
+      margin-bottom: 5px;
+    }
+    div {
+      text-align: right;
+      position: relative;
+      z-index: 1;
+      font-size: 18px;
+      color: rgba(black, 0.8);
+      .foodName {
+        font-size: 20px;
+        color: rgba($color-main, 0.7);
+      }
+    }
+  }
+  > img {
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 50%;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+    width: 60%;
+    aspect-ratio: 1/1;
+  }
+}
+
+.groupSection {
+  width: 95%;
+  background-color: rgba($color-main, 0.03);
+  border-radius: 5px;
+  padding: 12px 24px;
+  position: relative;
+  flex: 1;
+  // min-height: 300px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    > div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      > span {
+        font-size: 15px;
+        color: rgba($color-main, 0.5);
+      }
+      > img {
+        width: 20px;
+        aspect-ratio: 1/1;
+      }
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba($color-main, 0.8);
+      text-decoration: underline;
+      text-decoration-color: rgba($color-main, 0.3);
+      text-underline-offset: 5px;
+    }
+  }
+  .groupInfoBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .soloGroupName {
+      border: 1px dashed rgba(black, 0.1);
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 14px;
+      color: rgba(black, 0.3);
+    }
+    .groupName {
+      font-size: 18px;
+      color: rgba(black, 0.8);
+    }
+  }
+  .soloMain {
+    margin: 12px;
+    > span {
+      margin: 12px;
+      font-size: 16px;
+      color: rgba($color-gray, 0.3);
+    }
+  }
+  .groupMain {
+    // padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    article {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-height: 200px;
+      .togetherBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin: 24px;
+        width: 93%;
+        > img {
+          width: 50px;
+          aspect-ratio: 1/1;
+        }
+        > span {
+          color: rgba(black, 0.3);
+          font-size: 17px;
+        }
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        overflow-y: auto;
+        min-height: 50px;
+        max-height: 160px;
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba($color-main, 0.2);
+          border-radius: 10px;
+          background-clip: padding-box;
+          border: 2px solid transparent;
+          &:hover {
+            background-color: rgba($color-main, 0.4);
+          }
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: rgba(220, 220, 220, 0.7);
+          border-radius: 10px;
+          /* box-shadow: inset 0px 0px 5px white; */
+        }
+        .memberCard {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          height: 50px;
+          min-height: 50px;
+          width: 95%;
+          border-radius: 5px;
+          padding: 0px 16px;
+          color: rgba(black, 0.7);
+          font-size: 16px;
+          .nickname {
+            width: 75%;
+            text-align: left;
+          }
+          .mbti {
+            width: 25%;
+            text-align: left;
+          }
+        }
+      }
+      .todayTitle {
+        padding-left: 5px;
+        text-align: left;
+        text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px
+          white;
+        color: rgba($color-main, 0.7);
+        font-size: 15px;
+        margin: 5px;
+      }
+      .todayNext {
+        padding-left: 5px;
+        text-align: left;
+        color: rgba($color-gray, 0.8);
+        font-size: 15px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.recordModalWrapper {
+  > h2 {
+    color: rgba($color-main, 0.8);
+    font-size: 17px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: rgba($color-main, 0.3);
+    font-weight: 100;
+  }
+  > p {
+    margin: 12px 0px;
+    font-size: 16px;
+    color: rgba(black, 0.7);
+    .boldWord {
+      color: rgba($color-main, 0.7);
+      font-size: 18px;
+    }
+  }
+  .recommendBox {
+    background-color: rgba($color-main, 0.03);
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    .recommendItem {
+      width: 30%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      .selectedImgBox {
+        width: 60px;
+        border-radius: 50%;
+        > img {
+          border: 3px solid rgba($color-main, 0.5);
+          width: 60px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+      .imgBox {
+        > img {
+          border: 1px solid rgba($color-main, 0.5);
+          width: 60px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+      .text {
+        font-size: 14px;
+        color: rgba(black, 0.6);
+      }
+      .selectedText {
+        font-size: 14px;
+        color: rgba($color-main, 0.8);
+      }
+    }
+  }
+  .buttonBox {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.createGroupModalWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  > h2 {
+    padding-left: 12px;
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 100;
+    color: rgba($color-main, 0.7);
+    text-decoration: underline;
+    text-decoration-color: rgba($color-main, 0.3);
+    text-underline-offset: 5px;
+  }
+  .imgBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    > span {
+      position: absolute;
+      font-size: 16px;
+      color: $color-gray;
+      top: 5px;
+      left: 5px;
+    }
+  }
+}
+
+.roulleteWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    position: absolute;
+    width: 17px;
+    aspect-ratio: 1/1;
+    z-index: 50;
+    top: -5px;
+  }
+  canvas {
+    transition: 2s;
+    width: 210px;
+    aspect-ratio: 1/1;
+    position: relative;
+
+    > div {
+      width: 380px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        font-size: 14px;
+        color: black;
+        height: 50px;
+        border-radius: 5px;
+        background: #000;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 22;
+      }
+    }
+  }
+  .stopButton {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    padding: 10px;
+    color: white;
+    background: rgba($color-main, 0.4);
+    border: none;
+    font-size: 17px;
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}
+
+button:active {
+  background: #444;
+  color: #f9f9f9;
+}
+.selectedFoodModalWrapper {
+  width: 100%;
+  padding: 36px;
+  .selectedFoodModalBox {
+    border: 50px dashed rgba($color-user, 0.2);
+    border-width: 3px;
+    background-color: rgba($color-user, 0.03);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+    > h2 {
+      background-color: white;
+      top: -12px;
+      position: absolute;
+      font-family: 'malssami815';
+      font-size: 22px;
+      color: rgba($color-main, 0.7);
+    }
+    > span {
+      font-size: 18px;
+      color: rgba($color-gray, 0.8);
+    }
+    > img {
+      border-radius: 50%;
+      width: 160px;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+
+.todayMemberModalWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  .todayMemberHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    > h2 {
+      text-align: left;
+      font-weight: 100;
+      font-size: 17px;
+      color: rgba($color-main, 0.8);
+      text-decoration: underline;
+      text-decoration-color: rgba($color-main, 0.3);
+      text-underline-offset: 5px;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      > img {
+        width: 15px;
+        aspect-ratio: 1/1;
+      }
+      > span {
+        color: rgba(black, 0.5);
+        font-size: 14px;
+      }
+    }
+  }
+  .todayMemberSection {
+    background-color: rgba($color-main, 0.03);
+    border-radius: 5px;
+    padding: 12px 0px 12px 12px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    max-height: 260px;
+    margin-bottom: 12px;
+    > h5 {
+      position: absolute;
+      left: 12px;
+      top: -10px;
+      font-size: 14px;
+      color: rgba($color-main, 0.7);
+      text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px
+        white;
+    }
+    .todayMemberBox {
+      max-height: 260px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow-y: auto;
+      padding-right: 5px;
+      min-height: 50px;
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba($color-main, 0.2);
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        &:hover {
+          background-color: rgba($color-main, 0.4);
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(220, 220, 220, 0.7);
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 5px white; */
+      }
+
+      .memberBox {
+        height: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 12px;
+        .memberWhiteBox {
+          height: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          width: 90%;
+          border-radius: 5px;
+          padding: 0px 24px;
+          gap: 5px;
+          .memberName {
+            font-size: 16px;
+            color: rgba(black, 0.7);
+            width: 80%;
+            text-align: left;
+          }
+          .memberMBTI {
+            font-size: 16px;
+            color: rgba(black, 0.8);
+          }
+        }
+        .changeButton {
+          width: 30px;
+          height: 30px;
+          aspect-ratio: 1/1;
+          background-color: rgba($color-main, 0.2);
+          color: #7789ed;
+          border-radius: 50%;
+          font-size: 17px;
+          font-weight: bold;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .nextMemberSection {
+    background-color: rgba($color-main, 0.03);
+    border-radius: 5px;
+    padding: 12px 0px 12px 12px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    max-height: 150px;
+
+    > h5 {
+      position: absolute;
+      left: 12px;
+      top: -10px;
+      font-size: 14px;
+      color: rgba($color-gray, 0.8);
+      text-shadow: 1px 0px white 0px 1px white -1px 0px white 0px -1px
+        white;
+    }
+
+    .todayMemberBox {
+      max-height: 115px;
+      min-height: 50px;
+      // background-color: aqua;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow-y: auto;
+      padding-right: 5px;
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba($color-main, 0.2);
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        &:hover {
+          background-color: rgba($color-main, 0.4);
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(220, 220, 220, 0.7);
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 5px white; */
+      }
+      .memberBox {
+        height: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 12px;
+        .memberWhiteBox {
+          height: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          width: 90%;
+          border-radius: 5px;
+          padding: 0px 24px;
+          gap: 5px;
+
+          .memberName {
+            font-size: 16px;
+            color: rgba(black, 0.7);
+            width: 80%;
+            text-align: left;
+          }
+          .memberMBTI {
+            font-size: 16px;
+            color: rgba(black, 0.8);
+          }
+        }
+        .changeButton {
+          width: 30px;
+          height: 30px;
+          aspect-ratio: 1/1;
+          background-color: rgba($color-main, 0.2);
+          color: #7789ed;
+          border-radius: 50%;
+          font-size: 17px;
+          font-weight: bold;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

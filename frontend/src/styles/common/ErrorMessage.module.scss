@@ -1,0 +1,32 @@
+.errorMessage {
+  color: rgba(#f32025, 0.5);
+  font-size: 14px;
+  text-align: left;
+}
+
+// @extend
+// .bigErrorMessage {
+//   font-size: 18px;
+//   color: rgba(#f32025, 0.5);
+// }
+
+// .smallErrorMessage {
+//   @extend .bigErrorMessage;
+//   font-size: 10px;
+// }
+
+// @mixin ( 이 상황에서는 이게 정답일 것 같음)
+// @mixin errorFontSize($fontSize) {
+//   color: rgba(#f32025, 0.5);
+//   font-size: $fontSize;
+//   margin: 10px;
+//   height: 18px;
+// }
+
+// .bigErrorMessage {
+//   @include errorFontSize(18px);
+// }
+
+// .smallErrorMessage {
+//   @include errorFontSize(15px);
+// }

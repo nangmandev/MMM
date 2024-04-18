@@ -1,0 +1,49 @@
+.wrapper {
+  height: calc(100vh - 152px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > section > div {
+  display: flex;
+  gap: 10px;
+}
+.wrapper > span {
+  font-size: 16px;
+  color: rgba(42, 67, 206, 0.5);
+  margin-top: 16px;
+}
+.wrapper > span a:visited,
+.wrapper > span a:link {
+  color: rgba(42, 67, 206, 0.5);
+}
+
+.subLogo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.inputPassword {
+  position: relative;
+}
+.inputPassword img {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 15px;
+}
+.inputPassword img:hover {
+  cursor: pointer;
+}
+
+.checkMessage {
+  color: rgba(243, 32, 37, 0.5);
+}
+
+.logout {
+  cursor: pointer;
+}
+.logout:hover {
+  color: rgba(42, 67, 206, 0.7);
+}/*# sourceMappingURL=UserPage.module.css.map */

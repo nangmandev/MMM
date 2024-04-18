@@ -1,0 +1,253 @@
+@import 'GroupPage.module.scss';
+
+.memberSection {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+  > span {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 18px;
+    color: $color-gray;
+    text-shadow:
+      -2px 0px white,
+      0px 2px white,
+      2px 0px white,
+      0px -2px white;
+  }
+
+  article {
+    margin-top: 15px;
+    background-color: rgba($color-main, 0.03);
+    border-radius: 5px;
+    position: relative;
+    padding: 12px;
+    padding-right: 6px;
+    @mixin articleSpan {
+      font-size: 15px;
+      text-shadow:
+        -2px 0px white,
+        0px 2px white,
+        2px 0px white,
+        0px -2px white;
+      position: absolute;
+      top: -10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .articleName {
+      @include articleSpan;
+      color: rgba($color-main, 0.7);
+      left: 25px;
+    }
+    .modalButton {
+      @include articleSpan;
+      color: rgba(#000000, 0.5);
+      right: 25px;
+    }
+    > .memberCardBox {
+      max-height: 175px;
+      overflow-y: auto;
+      padding-right: 8px;
+      min-height: 50px;
+      position: relative;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba($color-main, 0.2);
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        &:hover {
+          background-color: rgba($color-main, 0.4);
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(220, 220, 220, 0.7);
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 5px white; */
+      }
+      > span {
+        color: rgba($color-gray, 0.5);
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      > .memberBox {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+        > .memberCard {
+          font-size: 16px;
+          // box-shadow: 1px 1px 2px rgba($color-gray, 0.3);
+          border-radius: 5px;
+          background-color: white;
+          height: 50px;
+          flex-grow: 4;
+          margin-right: 10px;
+          display: grid;
+          align-items: center;
+          grid-template-columns: 1fr 6fr 2.4fr;
+          > img {
+            width: 18px;
+            justify-self: end;
+            // margin-right: 2px;
+          }
+          > .memberName {
+            margin: 0 6px;
+            text-align: left;
+          }
+          > .memberMBTI {
+            margin-right: 10px;
+          }
+        }
+      }
+      > .miniRedButton {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .modal {
+    > header {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: rgba($color-main, 0.8);
+      text-decoration: underline;
+      text-decoration-color: rgba($color-main, 0.3);
+      font-weight: 500;
+      text-underline-offset: 5px;
+      text-align: left;
+    }
+    > article {
+      .emailInput {
+        position: relative;
+        .finder {
+          width: 20px;
+          top: 11px;
+          right: 7px;
+          position: absolute;
+          cursor: pointer;
+        }
+      }
+      .checkMessage {
+        color: rgba(243, 32, 37, 0.5);
+      }
+    }
+  }
+}
+
+.mukboModalArticle {
+  margin-bottom: 15px;
+}
+.mukbotModalArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  .mukbotMBTI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    label {
+      width: 80px;
+      font-size: 20px;
+      color: #656565;
+      vertical-align: middle;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      font-size: 15px;
+      width: 190px;
+      color: rgba(#000000, 0.4);
+      border: 1px dashed rgba($color-main, 0.3);
+      border-radius: 3px;
+      padding: 3px;
+    }
+  }
+}
+
+.barWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  margin: 20px 7px 20px 0px;
+  width: 60%;
+  height: 9px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+}
+
+.progress {
+  border-radius: 5px;
+  position: absolute;
+  width: 0;
+  left: 1px;
+  top: 1px;
+  height: 7px;
+  opacity: 0.2;
+}
+
+.indicator {
+  position: absolute;
+  top: -110%;
+  transform: translate(-50%, -50%);
+  color: rgba(#000000, 0.6);
+  border-radius: 50%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mbtiNameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  .mbtiNameKor {
+    font-size: 15px;
+    color: rgba(black, 0.5);
+  }
+  .mbtiNameEng {
+    font-size: 13px;
+    color: rgba(black, 0.6);
+    margin-bottom: 2px;
+    &::first-letter {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba($color-main, 0.5);
+      text-shadow:
+        -2px 0px white,
+        0px 2px white,
+        2px 0px white,
+        0px -2px white;
+    }
+  }
+}
+
+.bar:hover .indicator {
+  display: flex;
+}
+
+.mbtiDetail {
+  width: 100%;
+  margin-top: 5px;
+}
